@@ -22,6 +22,5 @@ class MainActivity : AppCompatActivity() {
         val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.setLifecycleOwner(this)
         binding.viewModel = viewModel
-        binding.recyclerView.adapter = MainAdapter(viewModel)
     }
 }

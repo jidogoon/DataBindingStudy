@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 //apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 28
@@ -31,6 +32,7 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:1.0.0-rc02"
     implementation "androidx.lifecycle:lifecycle-extensions:2.0.0-rc01"
     implementation 'com.jidogoon:PdfRendererView:1.0.6'
+    kapt "androidx.databinding:databinding-compiler:3.2.0-rc03"
 
     testImplementation 'junit:junit:4.12'
     testImplementation 'androidx.arch.core:core-testing:2.0.0-rc01'

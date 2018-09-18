@@ -7,6 +7,7 @@ import com.jidogoon.databindingstudy.interfaces.IPDFListRepository
 class ViewModelFactory(): ViewModelProvider.Factory {
     private lateinit var pdfRepository: IPDFListRepository
     private lateinit var onClickItemAction: (url: String) -> Unit
+
     constructor(repository: IPDFListRepository, onClickItemAction: (url: String) -> Unit): this() {
         this.pdfRepository = repository
         this.onClickItemAction = onClickItemAction
